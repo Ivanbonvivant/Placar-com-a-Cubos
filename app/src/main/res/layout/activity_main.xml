@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/scoreTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/x"
+        android:layout_centerVertical="true"
+        android:text="0"
+        android:padding="16dp"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/x"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <TextView
+        android:id="@+id/scoreTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/x"
+        android:layout_centerVertical="true"
+        android:text="0"
+        android:padding="16dp"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahia"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:layout_below="@+id/scoreTime1"
+        android:layout_alignLeft="@+id/scoreTime1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitória"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:layout_below="@+id/scoreTime2"
+        android:layout_alignRight="@+id/scoreTime2" />
+
+
+</RelativeLayout>

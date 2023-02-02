@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/scoreTime2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/x"
+        android:background="#ED0505"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="1"
+        android:textColor="#F8FFFFF9"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="x"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreTime1"
+        android:layout_centerInParent="true"
+        android:text="set"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/scoreTime1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/x"
+        android:background="#FBF028"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="#F8FFFFF9"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/scoreTime1"
+        android:layout_alignTop="@+id/scoreTime1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/volei" />
+
+    <TextView
+        android:id="@+id/setScoreTime2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreTime2"
+        android:layout_alignLeft="@+id/scoreTime2"
+        android:background="#13D305"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F8FFFFF9"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:src="@drawable/volei"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/scoreTime2"
+        android:layout_alignRight="@+id/scoreTime2"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/setScoreTime1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreTime1"
+        android:layout_alignLeft="@+id/scoreTime1"
+        android:background="#13D305"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#F8FFFFF9"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setScoreTime1"
+        android:layout_alignLeft="@+id/scoreTime1"
+        android:text="Brasil"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setScoreTime2"
+        android:layout_alignRight="@+id/scoreTime2"
+        android:text="Portugal"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
